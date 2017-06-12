@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+    {% block body %}
+
+<div class="container container-fluid text-center myConteiner ">
+ <h1 class="display-3">Сколько эмоций на Ваших фото?</h1>
+</div>
+
+<div class="container container-fluid text-center ">
+    <div class="container">
+        <form class="form-group p-st" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+                {{ form.as_p }}
+            <button class="btn btn-outline-warning" type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
+
+    {% endblock %}

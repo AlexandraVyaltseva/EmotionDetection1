@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="col-5 pad">
+    <!--<div class="col-md-3">-->
+    {% if image.image %}
+    <div class="jumbotron myJumbotron">
+        <img src="{{ image.image.url }}" class="img-fluid" alt="Responsive image">
+    </div>
+
+    {% else %}
+    <h3>No image to display</h3>
+    {% endif %}
+<!--</div>-->
+</div>
+
+<div class="col">
+    <!--<div class="col-md-3">-->
+    {% for sub_img in image.subimage_set.all %}
+    <div class="row pad myHoverJumbotron">
+        <div class="col-3 pad"><div><img src="{{ sub_img.sub_image.url }}"class="img-fluid rounder" alt="Responsive image"></div></div>
+        <div class="col">
+            {% for key, value in sub_img.scores.items %}
+               <p style="margin-bottom:6px;">{{key}} : {{value}}</p>
+            {% endfor %}
+        </div>
+    </div>
+{% endfor %}
+<!--</div>-->
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,8 @@
+{% block body %}
+<div>
+{% for img in context %}
+    <p> {{ img.image.url }} </p>
+    <img src="{{ img.image.url }}">
+{% endfor %}
+</div>
+{% endblock %}

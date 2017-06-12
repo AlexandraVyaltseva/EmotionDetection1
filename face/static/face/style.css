@@ -1,0 +1,68 @@
+body{
+    background: white;
+}
+
+div.col img {
+    width: 100%;
+    height: auto;
+}
+
+.pad
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.jumbo
+{
+    border-radius: 0px;
+    box-shadow: 2px 3px 2px 0px rgba(0,0,0,0.5);
+    background-color: #FF9800;
+}
+
+.display-3
+{
+ color: #424242;
+}
+
+.nav-st
+{
+    background-color: #8BC34A ;
+}
+.navbar-toggler
+{
+    color:#424242;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.p-st
+{
+    color: #BDBDBD;
+    font-weight: 100;
+}
+
+.col
+{
+    color: #424242;
+    font-weight: 100;
+}
+
+.myJumbotron
+{
+    background-color: #FFE082!important;
+    border-radius: 0!important;
+}
+
+.myHoverJumbotron
+{
+    background-color: #F5F5F5!important;
+    border-radius: 0!important;
+}
+
+.myHoverJumbotron:hover
+{
+    background-color: #FFE082!important;
+}
